@@ -82,4 +82,73 @@ The CSV dataset was loaded using Pandas.
 ```python
 import pandas as pd
 
-df = pd.read_csv("Superstore.csv")
+df = pd.read_csv("Superstore.csv")```python
+
+2. Dataset Inspection
+
+The dataset structure was examined using functions such as:
+
+df.head()
+df.shape
+df.info()
+df.columns.tolist()
+3. Missing Value Detection
+
+Missing values were identified using:
+
+df.isnull().sum()
+
+The analysis showed missing values in the Postal Code column.
+
+4. Missing Value Handling
+
+The missing values were handled appropriately based on the nature of the column.
+
+5. Duplicate Detection
+
+Duplicate records were checked using:
+
+df.duplicated().sum()
+6. Data Type Correction
+
+Date columns were initially stored as object/string values.
+
+They were converted into proper datetime format for further analysis.
+
+df["Order Date"] = pd.to_datetime(
+    df["Order Date"],
+    dayfirst=True
+)
+
+df["Ship Date"] = pd.to_datetime(
+    df["Ship Date"],
+    dayfirst=True
+)
+7. Statistical Analysis
+
+Basic statistics such as mean and median were calculated for numerical columns.
+
+Example:
+
+df["Sales"].mean()
+df["Sales"].median()
+8. Categorical Analysis
+
+Value counts were used to understand the distribution of categorical variables.
+
+Example:
+
+df["Category"].value_counts()
+
+
+📈 Key Findings
+
+After cleaning and exploring the dataset:
+
+The dataset contains approximately 9,800 records.
+The dataset contains 18 columns.
+Most columns contain complete data.
+A small number of missing values were found in the Postal Code column.
+Date columns required conversion from object/string format to datetime.
+Sales is a numerical variable suitable for statistical analysis.
+Category and Sub-Category can be analyzed using frequency counts.
