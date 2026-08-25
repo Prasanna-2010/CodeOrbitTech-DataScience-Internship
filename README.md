@@ -206,6 +206,7 @@ The projects demonstrate how Python-based data science techniques can be applied
 *Prasanna Amin*
 
 Data Science Intern
+
 CodeOrbitTech
 
 ## Repository
