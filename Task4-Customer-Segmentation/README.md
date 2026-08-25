@@ -125,7 +125,7 @@ Targeted promotions and personalized recommendations could help increase their p
 This segment contains customers with the highest average spending and high purchase frequency.
 These customers represent the most valuable customer group and should receive strong retention and loyalty strategies.
 
-##💡 Business Insights
+## 💡 Business Insights
 
 Customer segmentation can help businesses develop targeted strategies instead of treating every customer the same.
 Possible strategies include:
